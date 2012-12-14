@@ -1,0 +1,86 @@
+body {
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 18px;
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 0 0 0 7px;
+}
+
+.menu a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #aad;
+    display: block;
+}
+
+.menu a[href]:after {
+    content: " ⇗";
+}
+
+.nav {
+    background-color: #225;
+    color: #aad;
+    height: 42px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav > li {
+    display: inline-block;
+    margin: 0 0 10px 10px;
+    vertical-align: top;
+}
+
+.menu {
+    background-color: #225;
+    border-radius: 0 0 3px 3px;
+    display: none;
+    margin-top: -2px;
+    padding: 4px;
+    position: absolute;
+    min-width: 150px;
+}
+
+.menu > li {
+    padding: 3px;
+}
+
+.menu > li:hover {
+    background-color: #000;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#link-container {
+    padding: 5px 10px;
+}
+
+a#rss-link {
+    color: #225;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.feed-container {
+    font-size: 15px;
+    width: 700px;
+}
+
+.rss-entry {
+    padding: 10px;
+}
+
+#content {
+    margin: 50px 10px;
+}
