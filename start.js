@@ -34,6 +34,8 @@ var menu = [
     ]},
   { title: "Social",
     links: [
+      { href: "http://www.reddit.com/",
+        text: "reddit" },
       { href: "https://twitter.com",
         text: "twitter" },
       { href: "https://www.facebook.com",
