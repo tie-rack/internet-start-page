@@ -41,6 +41,18 @@ var menu = [
       { href: "https://www.facebook.com",
         text: "facebook" },
     ]},
+  { title: "Comedy",
+    links: [
+      { rss: "http://feeds.feedburner.com/Splitsider?format=xml",
+        url: "http://splitsider.com/",
+        text: "splitsider" },
+      { rss: "http://www.laughspin.com/feed/",
+        url: "http://www.laughspin.com/",
+        text: "laughspin" },
+      { rss: "http://www.mst3kinfo.com/?feed=atom",
+        url: "http://www.mst3kinfo.com/",
+        text: "mst3kinfo" }
+    ]}
 ];
 
 // template
