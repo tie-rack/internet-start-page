@@ -51,7 +51,10 @@ var menu = [
         text: "laughspin" },
       { rss: "http://www.mst3kinfo.com/?feed=atom",
         url: "http://www.mst3kinfo.com/",
-        text: "mst3kinfo" }
+        text: "mst3kinfo" },
+      { rss: "http://newyork.ucbtrainingcenter.com/courses/open/rss",
+        url: "http://newyork.ucbtrainingcenter.com/courses/open",
+        text: "ucb classes" }
     ]}
 ];
 
