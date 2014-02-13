@@ -54,7 +54,10 @@ var menu = [
         text: "mst3kinfo" },
       { rss: "http://newyork.ucbtrainingcenter.com/courses/open/rss",
         url: "http://newyork.ucbtrainingcenter.com/courses/open",
-        text: "ucb classes" }
+        text: "ucb classes" },
+      { rss: "http://ucbcomedy.tumblr.com/rss",
+        url: "http://ucbcomedy.tumblr.com/",
+        text: "ucb comedy" }
     ]}
 ];
 
