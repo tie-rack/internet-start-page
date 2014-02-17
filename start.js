@@ -14,6 +14,9 @@ var menu = [
       { rss: "http://rss.slashdot.org/Slashdot/slashdot",
         url: "http://slashdot.org",
         text: "/."},
+      { rss: "http://soylentnews.org/index.rss",
+        url: "http://soylentnews.org/",
+        text: "soylent" },
     ]},
   { title: "Clojure",
     links: [
