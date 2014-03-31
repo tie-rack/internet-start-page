@@ -64,6 +64,17 @@ var menu = [
       { rss: "http://ucbcomedy.tumblr.com/rss",
         url: "http://ucbcomedy.tumblr.com/",
         text: "ucb comedy" }
+    ]},
+  { title: "Spanish",
+    links: [
+      { href: "https://www.duolingo.com",
+        text: "duolingo" },
+      { href: "http://www.learner.org/series/destinos/index.html",
+        text: "destinos"},
+      { href: "http://www.wordreference.com/",
+        text: "word reference" },
+      { href: "http://www.newsinslowspanish.com/latino/",
+        text: "news in slow spanish" }
     ]}
 ];
 
