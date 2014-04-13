@@ -65,7 +65,7 @@ var menu = [
         url: "http://ucbcomedy.tumblr.com/",
         text: "ucb comedy" }
     ]},
-  { title: "ñ",
+  { title: "🇪🇸",
     links: [
       { href: "https://www.duolingo.com",
         text: "duolingo" },
