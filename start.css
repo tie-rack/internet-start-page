@@ -12,6 +12,10 @@ h1 {
     padding: 0 0 0 7px;
 }
 
+h1 .mobile {
+    display: none;
+}
+
 .menu a {
     cursor: pointer;
     text-decoration: none;
@@ -91,6 +95,14 @@ a#rss-link {
     h1 {
         font-size: 14px;
         line-height: 16px;
+    }
+
+    h1 .full-size {
+        display: none;
+    }
+
+    h1 .mobile {
+        display: block;
     }
 
     .nav {

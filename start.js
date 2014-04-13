@@ -1,5 +1,6 @@
 var menu = [
-  { title: "📰",
+  { title: "News",
+    mobileTitle: "📰",
     links: [
       { href: "http://forecast.weather.gov/MapClick.php?CityName=New+York&state=NY&site=OKX&textField1=40.7198&textField2=-73.993&e=1",
         text: "weather" },
@@ -21,7 +22,8 @@ var menu = [
         url: "http://soylentnews.org/",
         text: "soylent" },
     ]},
-  { title: "ƛ",
+  { title: "Clojure",
+    mobileTitle: "ƛ",
     links: [
       { rss: "http://planet.clojure.in/atom.xml",
         url: "http://planet.clojure.in",
@@ -29,7 +31,8 @@ var menu = [
       { href: "http://clojure.github.com/clojure/clojure.core-api.html",
         text: "core api" }
     ]},
-  { title: "💭",
+  { title: "Comics",
+    mobileTitle: "💭",
     links: [
       { href: "http://xkcd.com",
         text: "xkcd" },
@@ -38,7 +41,8 @@ var menu = [
       { href: "http://qwantz.com",
         text: "dinsosaur comics" },
     ]},
-  { title: "👫",
+  { title: "Social",
+    mobileTitle: "👫",
     links: [
       { href: "http://www.reddit.com/",
         text: "reddit" },
@@ -47,7 +51,8 @@ var menu = [
       { href: "https://www.facebook.com",
         text: "facebook" },
     ]},
-  { title: "😛",
+  { title: "Comedy",
+    mobileTitle: "😛",
     links: [
       { rss: "http://feeds.feedburner.com/Splitsider?format=xml",
         url: "http://splitsider.com/",
@@ -65,7 +70,8 @@ var menu = [
         url: "http://ucbcomedy.tumblr.com/",
         text: "ucb comedy" }
     ]},
-  { title: "🇪🇸",
+  { title: "Spanish",
+    mobileTitle: "🇪🇸",
     links: [
       { href: "https://www.duolingo.com",
         text: "duolingo" },
@@ -86,7 +92,17 @@ $(menu).each(function(_,e) {
   menuItem.attr("data-menu", id);
 
   var menuHeader = $("<h1></h1>");
-  menuHeader.text(e.title);
+
+  var fullSizeHeader = $("<span></span>");
+  fullSizeHeader.addClass("full-size");
+  fullSizeHeader.text(e.title);
+  menuHeader.append(fullSizeHeader);
+
+  var mobileHeader = $("<span></span>");
+  mobileHeader.addClass("mobile");
+  mobileHeader.text(e.mobileTitle);
+  menuHeader.append(mobileHeader);
+
   menuItem.append(menuHeader);
 
   var subMenu = $("<ul></ul>");
