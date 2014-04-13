@@ -1,5 +1,5 @@
 var menu = [
-  { title: "News",
+  { title: "📰",
     links: [
       { href: "http://forecast.weather.gov/MapClick.php?CityName=New+York&state=NY&site=OKX&textField1=40.7198&textField2=-73.993&e=1",
         text: "weather" },
@@ -21,7 +21,7 @@ var menu = [
         url: "http://soylentnews.org/",
         text: "soylent" },
     ]},
-  { title: "Clojure",
+  { title: "ƛ",
     links: [
       { rss: "http://planet.clojure.in/atom.xml",
         url: "http://planet.clojure.in",
@@ -29,7 +29,7 @@ var menu = [
       { href: "http://clojure.github.com/clojure/clojure.core-api.html",
         text: "core api" }
     ]},
-  { title: "Comics",
+  { title: "💭",
     links: [
       { href: "http://xkcd.com",
         text: "xkcd" },
@@ -38,7 +38,7 @@ var menu = [
       { href: "http://qwantz.com",
         text: "dinsosaur comics" },
     ]},
-  { title: "Social",
+  { title: "👫",
     links: [
       { href: "http://www.reddit.com/",
         text: "reddit" },
@@ -47,7 +47,7 @@ var menu = [
       { href: "https://www.facebook.com",
         text: "facebook" },
     ]},
-  { title: "Comedy",
+  { title: "😛",
     links: [
       { rss: "http://feeds.feedburner.com/Splitsider?format=xml",
         url: "http://splitsider.com/",
@@ -65,7 +65,7 @@ var menu = [
         url: "http://ucbcomedy.tumblr.com/",
         text: "ucb comedy" }
     ]},
-  { title: "Spanish",
+  { title: "ñ",
     links: [
       { href: "https://www.duolingo.com",
         text: "duolingo" },
