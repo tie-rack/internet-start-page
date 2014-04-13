@@ -92,21 +92,12 @@ a#rss-link {
 }
 
 @media (max-width: 384px) {
-    h1 {
-        font-size: 14px;
-        line-height: 16px;
-    }
-
     h1 .full-size {
         display: none;
     }
 
     h1 .mobile {
         display: block;
-    }
-
-    .nav {
-        height: 34px;
     }
 
     .menu {
