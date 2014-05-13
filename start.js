@@ -72,6 +72,8 @@ var menu = [
     links: [
       { href: "https://www.duolingo.com",
         text: "duolingo" },
+      { href: "http://www.memrise.com/",
+        text: "memrise" },
       { href: "http://www.learner.org/series/destinos/index.html",
         text: "destinos"},
       { href: "http://www.wordreference.com/",
