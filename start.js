@@ -89,10 +89,15 @@ var menu = [
       { rss: "http://planet.mozilla.org/rss20.xml",
         url: "http://planet.mozilla.org/",
         text: "planet mozilla" },
+      { rss: "http://firefoxnightly.tumblr.com/rss",
+        url: "firefoxnightly.tumblr.com",
+        text: "FirefoxNightly" },
       { href: "https://mail.mozilla.org/pipermail/firefox-dev/",
         text: "firefox-dev archives"},
       { href: "https://mail.mozilla.org/pipermail/nightly-testers/2014-May/thread.html",
         text: "nightly-testers archives" },
+      { href: "https://groups.google.com/forum/?fromgroups#!forum/mozilla.dev.platform",
+        text: "mozilla.dev.platform" },
       { href: "http://hg.mozilla.org/mozilla-central/pushloghtml?startdate=48+hours+ago&enddate=now",
         text: "pushlog" }
     ]}
