@@ -80,6 +80,21 @@ var menu = [
         text: "word reference" },
       { href: "http://www.newsinslowspanish.com/latino/",
         text: "news in slow spanish" }
+    ]},
+  { title: "Firefox",
+    mobileTitle: "🔥",
+    links: [
+      { href: "http://www.reddit.com/r/FirefoxInfo/",
+        text: "/r/FirefoxInfo" },
+      { rss: "http://planet.mozilla.org/rss20.xml",
+        url: "http://planet.mozilla.org/",
+        text: "planet mozilla" },
+      { href: "https://mail.mozilla.org/pipermail/firefox-dev/",
+        text: "firefox-dev archives"},
+      { href: "https://mail.mozilla.org/pipermail/nightly-testers/2014-May/thread.html",
+        text: "nightly-testers archives" },
+      { href: "http://hg.mozilla.org/mozilla-central/pushloghtml?startdate=48+hours+ago&enddate=now",
+        text: "pushlog" }
     ]}
 ];
 
