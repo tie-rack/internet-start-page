@@ -86,6 +86,9 @@ var menu = [
     links: [
       { href: "http://www.reddit.com/r/FirefoxInfo/",
         text: "/r/FirefoxInfo" },
+      { rss: "https://blog.mozilla.org/feed/",
+        url: "https://blog.mozilla.org/",
+        text: "mozilla blog" },
       { rss: "http://planet.mozilla.org/rss20.xml",
         url: "http://planet.mozilla.org/",
         text: "planet mozilla" },
