@@ -105,7 +105,7 @@ var menu = [
         text: "Firefox Planning (Wednesdays)" },
       { href: "https://mail.mozilla.org/pipermail/firefox-dev/",
         text: "firefox-dev archives"},
-      { href: "https://mail.mozilla.org/pipermail/nightly-testers/2014-May/thread.html",
+      { href: "https://mail.mozilla.org/pipermail/nightly-testers/",
         text: "nightly-testers archives" },
       { href: "https://groups.google.com/forum/?fromgroups#!forum/mozilla.dev.platform",
         text: "mozilla.dev.platform" },
