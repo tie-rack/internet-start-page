@@ -76,7 +76,11 @@ var menu = [
       { href: "http://www.wordreference.com/",
         text: "word reference" },
       { href: "http://www.newsinslowspanish.com/latino/",
-        text: "news in slow spanish" }
+        text: "news in slow spanish" },
+      { href: "http://www.primerahora.com/",
+        text: "primera hora" },
+      { href: "http://www.eldiariony.com/",
+        text: "el diario"}
     ]},
   { title: "Firefox",
     mobileTitle: "🔥",
