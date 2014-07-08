@@ -87,6 +87,8 @@ var menu = [
     links: [
       { href: "http://www.reddit.com/r/FirefoxInfo/",
         text: "/r/FirefoxInfo" },
+      { href: "https://www.google.com/search?q=firefox#q=firefox&tbm=nws",
+        text: "google news search" },
       { rss: "https://blog.mozilla.org/feed/",
         url: "https://blog.mozilla.org/",
         text: "mozilla blog" },
