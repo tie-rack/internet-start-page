@@ -80,7 +80,9 @@ var menu = [
       { href: "http://www.primerahora.com/",
         text: "primera hora" },
       { href: "http://www.eldiariony.com/",
-        text: "el diario"}
+        text: "el diario"},
+      { href: "https://es.wikipedia.org/wiki/Wikipedia:Portada",
+        text: "wikipedia en español" }
     ]},
   { title: "Firefox",
     mobileTitle: "🔥",
