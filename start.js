@@ -16,14 +16,17 @@ var menu = [
         url: "http://pipedot.org/",
         text: "|." },
     ]},
-  { title: "Clojure",
+  { title: "Programming",
     mobileTitle: "ƛ",
     links: [
       { rss: "http://planet.clojure.in/atom.xml",
         url: "http://planet.clojure.in",
         text: "planet clojure" },
       { href: "http://clojure.github.com/clojure/clojure.core-api.html",
-        text: "core api" }
+        text: "clojure.core api" },
+      { rss: "http://sachachua.com/blog/category/emacs/feed/",
+        url: "http://sachachua.com/blog/category/emacs/",
+        text: "sacha chua emacs" }
     ]},
   { title: "Comics",
     mobileTitle: "💭",
