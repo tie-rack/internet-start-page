@@ -51,7 +51,7 @@ var menu = [
   { title: "Comedy",
     mobileTitle: "😛",
     links: [
-      { rss: "http://feeds.feedburner.com/Splitsider?format=xml",
+      { rss: "http://splitsider.com/feed/atom/",
         url: "http://splitsider.com/",
         text: "splitsider" },
       { rss: "http://www.laughspin.com/feed/",
