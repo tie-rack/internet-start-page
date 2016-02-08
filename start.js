@@ -24,7 +24,10 @@ var menu = [
         text: "clojure.core api" },
       { rss: "http://sachachua.com/blog/category/emacs/feed/",
         url: "http://sachachua.com/blog/category/emacs/",
-        text: "sacha chua emacs" }
+        text: "sacha chua emacs" },
+      { rss: "http://endlessparentheses.com/atom.xml",
+        url: "http://endlessparentheses.com/",
+        text: "endless ()" }
     ]},
   { title: "Comics",
     mobileTitle: "💭",
