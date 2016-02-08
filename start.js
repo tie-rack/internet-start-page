@@ -4,8 +4,6 @@ var menu = [
     links: [
       { href: "http://forecast.weather.gov/MapClick.php?CityName=New+York&state=NY&site=OKX&textField1=40.7198&textField2=-73.993&e=1",
         text: "weather" },
-      { href: "http://getprismatic.com/",
-        text: "prismatic" },
       { rss: "http://feeds.slate.com/slate",
         url: "http://www.slate.com/",
         text: "slate" },
