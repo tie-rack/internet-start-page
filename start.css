@@ -91,7 +91,7 @@ a#rss-link {
     margin: 50px 10px;
 }
 
-@media (max-width: 384px) {
+@media (max-width: 650px) {
     h1 .full-size {
         display: none;
     }
@@ -101,6 +101,6 @@ a#rss-link {
     }
 
     .feed-container {
-        width: 350px;
+        width: 97%;
     }
 }
