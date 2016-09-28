@@ -27,7 +27,10 @@ var menu = [
         text: "sacha chua emacs" },
       { rss: "http://endlessparentheses.com/atom.xml",
         url: "http://endlessparentheses.com/",
-        text: "endless ()" }
+        text: "endless ()" },
+      { rss: "http://pragmaticemacs.com/feed/",
+        url: "http://pragmaticemacs.com/",
+        text: "pragmatic emacs" }
     ]},
   { title: "Comics",
     mobileTitle: "💭",
