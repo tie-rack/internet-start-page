@@ -30,7 +30,10 @@ var menu = [
         text: "endless ()" },
       { rss: "http://pragmaticemacs.com/feed/",
         url: "http://pragmaticemacs.com/",
-        text: "pragmatic emacs" }
+        text: "pragmatic emacs" },
+      { rss: "http://emacs-fu.blogspot.com/feeds/posts/default?alt=rss",
+        url: "http://emacs-fu.blogspot.com/",
+        text: "emacs-fu" },
     ]},
   { title: "Comics",
     mobileTitle: "💭",
