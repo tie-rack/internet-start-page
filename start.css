@@ -1,110 +1,110 @@
 body {
-    font-family: "Lucida Grande", sans-serif;
-    font-size: 18px;
-    margin:0;
-    padding:0;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 18px;
+  margin:0;
+  padding:0;
 }
 
 h1 {
-    font-size: 18px;
-    line-height: 20px;
-    cursor: pointer;
-    padding: 0 0 0 7px;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 0 0 0 7px;
 }
 
 h1 .mobile {
-    display: none;
+  display: none;
 }
 
 .menu a {
-    cursor: pointer;
-    text-decoration: none;
-    color: #aad;
-    display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #aad;
+  display: block;
 }
 
 .menu a[href]:after {
-    content: " ⇗";
+  content: " ⇗";
 }
 
 .nav {
-    background-color: #225;
-    color: #aad;
-    height: 42px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 0 1em #114;
-    opacity: 0.95;
+  background-color: #225;
+  color: #aad;
+  height: 42px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 1em #114;
+  opacity: 0.95;
 }
 
 .nav > li {
-    display: inline-block;
-    margin: 0 0 10px 10px;
-    vertical-align: top;
+  display: inline-block;
+  margin: 0 0 10px 10px;
+  vertical-align: top;
 }
 
 .menu {
-    background-color: #225;
-    border-radius: 0 0 3px 3px;
-    display: none;
-    margin-top: -2px;
-    padding: 4px;
-    position: absolute;
-    min-width: 150px;
+  background-color: #225;
+  border-radius: 0 0 3px 3px;
+  display: none;
+  margin-top: -2px;
+  padding: 4px;
+  position: absolute;
+  min-width: 150px;
 }
 
 .menu > li {
-    padding: 3px;
+  padding: 3px;
 }
 
 .menu > li:hover {
-    background-color: #000;
+  background-color: #000;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 #link-container {
-    padding: 5px 10px;
+  padding: 5px 10px;
 }
 
 a#rss-link {
-    color: #225;
-    text-decoration: none;
-    font-weight: bold;
+  color: #225;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .feed-container {
-    font-size: 15px;
-    width: 700px;
+  font-size: 15px;
+  width: 700px;
 }
 
 .rss-entry {
-    padding: 10px;
+  padding: 10px;
 }
 
 #content {
-    margin: 50px 10px;
+  margin: 50px 10px;
 }
 
 @media (max-width: 650px) {
-    .mobile {
-        font-family: 'NotoEmojiRegular', sans-serif;
-    }
+  .mobile {
+    font-family: 'NotoEmojiRegular', sans-serif;
+  }
 
-    h1 .full-size {
-        display: none;
-    }
+  h1 .full-size {
+    display: none;
+  }
 
-    h1 .mobile {
-        display: block;
-    }
+  h1 .mobile {
+    display: block;
+  }
 
-    .feed-container {
-        width: 97%;
-    }
+  .feed-container {
+    width: 97%;
+  }
 }
