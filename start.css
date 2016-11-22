@@ -92,6 +92,10 @@ a#rss-link {
 }
 
 @media (max-width: 650px) {
+    .mobile {
+        font-family: 'NotoEmojiRegular', sans-serif;
+    }
+
     h1 .full-size {
         display: none;
     }
