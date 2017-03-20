@@ -104,6 +104,7 @@ $(menu).each(function(_,e) {
         $("#rss-content").text("");
         $("#rss-content").rss(link.rss, {
           limit: 10,
+          ssl: true,
           layoutTemplate: '<div class="feed-container">{entries}</div>',
           entryTemplate: '<div class="rss-entry"><a href="{url}">{title}</a><br/>{bodyPlain}</div>'
         });
