@@ -1,3 +1,5 @@
+var separator = new Object();
+
 var menu = [
   { title: "News",
     mobileTitle: "📰",
@@ -25,6 +27,7 @@ var menu = [
         text: "planet clojure" },
       { href: "http://clojure.github.com/clojure/clojure.core-api.html",
         text: "clojure.core api" },
+      separator,
       { rss: "http://sachachua.com/blog/category/emacs/feed/",
         url: "http://sachachua.com/blog/category/emacs/",
         text: "sacha chua emacs" },
@@ -37,6 +40,7 @@ var menu = [
       { rss: "http://emacs-fu.blogspot.com/feeds/posts/default?alt=rss",
         url: "http://emacs-fu.blogspot.com/",
         text: "emacs-fu" },
+      separator,
       { rss: "https://herald.community.rs/rss",
         url: "https://herald.community.rs/",
         text: "rust herald" },
@@ -99,29 +103,33 @@ $(menu).each(function(_,e) {
   subMenu.addClass("menu");
 
   $(e.links).each(function(_,link) {
-    var li = $("<li></li>");
-    var a = $("<a></a>");
-
-    if (link.rss) {
-      a.attr("data-rss", link.rss);
-      a.click(function(_) {
-        $("#rss-link").text(link.text);
-        $("#rss-link").attr("href", link.url);
-        $("#rss-content").text("");
-        $("#rss-content").rss(link.rss, {
-          limit: 10,
-          ssl: true,
-          layoutTemplate: '<div class="feed-container">{entries}</div>',
-          entryTemplate: '<div class="rss-entry"><a href="{url}">{title}</a><br/>{bodyPlain}</div>'
-        });
-      });
+    if (link === separator) {
+      subMenu.append($("<hr>"));
     } else {
-      a.attr("href", link.href);
-    }
-    a.text(link.text);
+      var li = $("<li></li>");
+      var a = $("<a></a>");
 
-    li.append(a);
-    subMenu.append(li);
+      if (link.rss) {
+        a.attr("data-rss", link.rss);
+        a.click(function(_) {
+          $("#rss-link").text(link.text);
+          $("#rss-link").attr("href", link.url);
+          $("#rss-content").text("");
+          $("#rss-content").rss(link.rss, {
+            limit: 10,
+            ssl: true,
+            layoutTemplate: '<div class="feed-container">{entries}</div>',
+            entryTemplate: '<div class="rss-entry"><a href="{url}">{title}</a><br/>{bodyPlain}</div>'
+          });
+        });
+      } else {
+        a.attr("href", link.href);
+      }
+      a.text(link.text);
+
+      li.append(a);
+      subMenu.append(li);
+    }
   });
   menuItem.append(subMenu);
 

@@ -91,6 +91,12 @@ a#rss-link {
   margin: 50px 10px;
 }
 
+hr {
+  background-color: #aad;
+  border: 0;
+  height: 1px;
+}
+
 @media (max-width: 650px) {
   .mobile {
     font-family: 'NotoEmojiRegular', sans-serif;
