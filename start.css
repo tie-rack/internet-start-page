@@ -97,6 +97,15 @@ hr {
   height: 1px;
 }
 
+/* NotoEmojiRegular is distributed by virtue of the SIL Open Font
+   License, see /vendor/SIL-LICENSE for details */
+@font-face {
+  font-family: 'NotoEmojiRegular';
+  src: url('vendor/NotoEmoji-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @media (max-width: 650px) {
   .mobile {
     font-family: 'NotoEmojiRegular', sans-serif;
