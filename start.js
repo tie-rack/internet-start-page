@@ -140,3 +140,8 @@ $(".menu-category").each((_,e) => {
   const subMenuId = "#" + $(e).attr("data-menu");
   $(e).hover((_) => $(subMenuId).toggle());
 });
+
+window.addEventListener('error', (e) => {
+  console.log(e);
+  $("#rss-content").text("Something's going wrong, sorry!");
+}, true);
