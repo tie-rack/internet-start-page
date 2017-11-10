@@ -1,6 +1,6 @@
-var separator = new Object();
+const separator = new Object();
 
-var menu = [
+const menu = [
   { title: "News",
     mobileTitle: "📰",
     links: [
@@ -78,36 +78,36 @@ var menu = [
 ];
 
 // template
-$(menu).each(function(_,e) {
-  var id = e.title + "-menu";
-  var menuItem = $("<li></li>");
+$(menu).each((_,e) => {
+  const id = e.title + "-menu";
+  const menuItem = $("<li></li>");
   menuItem.addClass("menu-category");
   menuItem.attr("data-menu", id);
 
-  var menuHeader = $("<h1></h1>");
+  const menuHeader = $("<h1></h1>");
 
-  var fullSizeHeader = $("<span></span>");
+  const fullSizeHeader = $("<span></span>");
   fullSizeHeader.addClass("full-size");
   fullSizeHeader.text(e.title);
   menuHeader.append(fullSizeHeader);
 
-  var mobileHeader = $("<span></span>");
+  const mobileHeader = $("<span></span>");
   mobileHeader.addClass("mobile");
   mobileHeader.text(e.mobileTitle);
   menuHeader.append(mobileHeader);
 
   menuItem.append(menuHeader);
 
-  var subMenu = $("<ul></ul>");
+  const subMenu = $("<ul></ul>");
   subMenu.attr("id", id);
   subMenu.addClass("menu");
 
-  $(e.links).each(function(_,link) {
+  $(e.links).each((_,link) => {
     if (link === separator) {
       subMenu.append($("<hr>"));
     } else {
-      var li = $("<li></li>");
-      var a = $("<a></a>");
+      const li = $("<li></li>");
+      const a = $("<a></a>");
 
       if (link.rss) {
         a.attr("data-rss", link.rss);
@@ -136,7 +136,7 @@ $(menu).each(function(_,e) {
   $(".nav").append(menuItem);
 });
 
-$(".menu-category").each(function(_,e) {
-  var subMenuId = "#" + $(e).attr("data-menu");
-  $(e).hover(function(_) { $(subMenuId).toggle(); });
+$(".menu-category").each((_,e) => {
+  const subMenuId = "#" + $(e).attr("data-menu");
+  $(e).hover((_) => $(subMenuId).toggle());
 });
