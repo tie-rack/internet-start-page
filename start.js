@@ -1,3 +1,11 @@
+const zeroPad = n => {
+  if (n < 10) {
+    return `0${n}`;
+  } else {
+    return `${n}`;
+  }
+}
+
 const separator = new Object();
 
 const menu = [
@@ -54,6 +62,15 @@ const menu = [
         text: "smbc" },
       { href: "http://qwantz.com",
         text: "dinsosaur comics" },
+      { hrefFunction: () => {
+        const date = new Date();
+        const year = date.getFullYear();
+        const month = zeroPad(date.getMonth() + 1);
+        const day = zeroPad(date.getDate());
+        return `http://www.gocomics.com/nancy/${year}/${month}/${day}`;
+      },
+        text: "nancy"
+      },
     ]},
   { title: "Social",
     mobileTitle: "👫",
@@ -125,6 +142,8 @@ $(menu).each((_,e) => {
             entryTemplate: '<div class="rss-entry"><a href="{url}">{title}</a><br/>{bodyPlain}</div>'
           });
         });
+      } else if (link.hrefFunction) {
+        a.attr("href", link.hrefFunction());
       } else {
         a.attr("href", link.href);
       }
