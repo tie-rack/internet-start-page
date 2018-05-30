@@ -88,7 +88,7 @@ const menu = [
   { title: "Comedy",
     mobileTitle: "😛",
     links: [
-      { href: "http://www.vulture.com/comedy/",
+      { href: "https://www.vulture.com/comedy/",
         text: "vulture comedy" },
       { rss: "http://www.mst3kinfo.com/?feed=atom",
         url: "http://www.mst3kinfo.com/",
