@@ -88,9 +88,8 @@ const menu = [
   { title: "Comedy",
     mobileTitle: "😛",
     links: [
-      { rss: "http://splitsider.com/feed/atom/",
-        url: "http://splitsider.com/",
-        text: "splitsider" },
+      { href: "http://www.vulture.com/comedy/",
+        text: "vulture comedy" },
       { rss: "http://www.mst3kinfo.com/?feed=atom",
         url: "http://www.mst3kinfo.com/",
         text: "mst3kinfo" },
