@@ -80,17 +80,8 @@ const menu = [
       separator,
       { href: "https://mastodon.social/",
         text: "mastodon.social" },
-      { href: "https://dice.camp/",
-        text: "dice.camp" },
-    ]},
-  { title: "Comedy",
-    mobileTitle: "😛",
-    links: [
-      { href: "https://www.vulture.com/comedy/",
-        text: "vulture comedy" },
-      { rss: "http://www.mst3kinfo.com/?feed=atom",
-        url: "http://www.mst3kinfo.com/",
-        text: "mst3kinfo" },
+      { href: "https://mastodon.technology/",
+        text: "mastodon.technology" },
     ]},
 ];
 
