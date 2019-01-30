@@ -60,8 +60,6 @@ const menu = [
         text: "xkcd" },
       { href: "http://smbc-comics.com",
         text: "smbc" },
-      { href: "http://qwantz.com",
-        text: "dinsosaur comics" },
       { hrefFunction: () => {
         const date = new Date();
         const year = date.getFullYear();
