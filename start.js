@@ -80,8 +80,10 @@ const menu = [
       separator,
       { href: "https://mastodon.social/",
         text: "mastodon.social" },
-      { href: "https://mastodon.technology/",
-        text: "mastodon.technology" },
+      { href: "https://mstdn.social/",
+        text: "mstdn.social" },
+      { href: "https://indieweb.social/",
+        text: "indieweb.social" },
     ]},
 ];
 
