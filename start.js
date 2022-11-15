@@ -75,15 +75,15 @@ const menu = [
     links: [
       { href: "http://www.reddit.com/",
         text: "reddit" },
-      { href: "https://twitter.com",
-        text: "twitter" },
       separator,
-      { href: "https://mastodon.social/",
-        text: "mastodon.social" },
       { href: "https://mstdn.social/",
         text: "mstdn.social" },
       { href: "https://indieweb.social/",
         text: "indieweb.social" },
+      { href: "https://oulipo.social/",
+        text: "oulipo.social" },
+      { href: "https://pxlmo.com/",
+        text: "pxlmo" },
     ]},
 ];
 
