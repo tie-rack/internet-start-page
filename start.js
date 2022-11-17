@@ -82,8 +82,8 @@ const menu = [
         text: "indieweb.social" },
       { href: "https://oulipo.social/",
         text: "oulipo.social" },
-      { href: "https://pxlmo.com/",
-        text: "pxlmo" },
+      { href: "https://tabletop.vip/",
+        text: "tabletop.vip" },
     ]},
 ];
 
