@@ -76,14 +76,8 @@ const menu = [
       { href: "http://www.reddit.com/",
         text: "reddit" },
       separator,
-      { href: "https://mstdn.social/",
-        text: "mstdn.social" },
-      { href: "https://indieweb.social/",
-        text: "indieweb.social" },
-      { href: "https://oulipo.social/",
-        text: "oulipo.social" },
-      { href: "https://tabletop.vip/",
-        text: "tabletop.vip" },
+      { href: "https://elk.zone/",
+        text: "elk.zone" },
     ]},
 ];
 
