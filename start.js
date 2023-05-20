@@ -14,44 +14,20 @@ const menu = [
     links: [
       { href: "http://forecast.weather.gov/MapClick.php?CityName=New+York&state=NY&site=OKX&textField1=40.7198&textField2=-73.993&e=1",
         text: "weather" },
-      { rss: "http://feeds.slate.com/slate",
-        url: "http://www.slate.com/",
+      { href: "http://www.slate.com/",
         text: "slate" },
-      { rss: "http://feeds.washingtonpost.com/rss/national",
-        url: "https://www.washingtonpost.com/",
+      { href: "https://www.washingtonpost.com/",
         text: "wapo" },
-      { rss: "http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
-        url: "http://nytimes.com",
+      { href: "http://nytimes.com",
         text: "nyt" },
-      { rss: "http://verysmartbrothas.theroot.com/rss",
-        url: "http://verysmartbrothas.theroot.com/",
+      { href: "http://verysmartbrothas.theroot.com/",
         text: "vsb" },
     ]},
   { title: "Programming",
     mobileTitle: "ƛ",
     links: [
-      { rss: "http://planet.clojure.in/atom.xml",
-        url: "http://planet.clojure.in",
-        text: "planet clojure" },
-      { href: "http://clojure.github.com/clojure/clojure.core-api.html",
-        text: "clojure.core api" },
-      separator,
-      { rss: "http://sachachua.com/blog/category/emacs/feed/",
-        url: "http://sachachua.com/blog/category/emacs/",
+      { href: "http://sachachua.com/blog/category/emacs/",
         text: "sacha chua emacs" },
-      { rss: "http://endlessparentheses.com/atom.xml",
-        url: "http://endlessparentheses.com/",
-        text: "endless ()" },
-      { rss: "http://pragmaticemacs.com/feed/",
-        url: "http://pragmaticemacs.com/",
-        text: "pragmatic emacs" },
-      { rss: "http://emacs-fu.blogspot.com/feeds/posts/default?alt=rss",
-        url: "http://emacs-fu.blogspot.com/",
-        text: "emacs-fu" },
-      separator,
-      { rss: "https://herald.community.rs/rss",
-        url: "https://herald.community.rs/",
-        text: "rust herald" },
     ]},
   { title: "Comics",
     mobileTitle: "💭",
@@ -113,20 +89,7 @@ $(menu).each((_,e) => {
       const li = $("<li></li>");
       const a = $("<a></a>");
 
-      if (link.rss) {
-        a.attr("data-rss", link.rss);
-        a.click(function(_) {
-          $("#rss-link").text(link.text);
-          $("#rss-link").attr("href", link.url);
-          $("#rss-content").text("");
-          $("#rss-content").rss(link.rss, {
-            limit: 10,
-            ssl: true,
-            layoutTemplate: '<div class="feed-container">{entries}</div>',
-            entryTemplate: '<div class="rss-entry"><a href="{url}">{title}</a><br/>{bodyPlain}</div>'
-          });
-        });
-      } else if (link.hrefFunction) {
+      if (link.hrefFunction) {
         a.attr("href", link.hrefFunction());
       } else {
         a.attr("href", link.href);
