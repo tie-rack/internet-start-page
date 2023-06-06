@@ -55,6 +55,16 @@ const menu = [
       { href: "https://elk.zone/",
         text: "elk.zone" },
     ]},
+  { title: "Games",
+    mobileTitle: "🎲",
+    links: [
+      { href: "https://www.nytimes.com/games/wordle/index.html",
+        text: "wordle" },
+      { href: "https://www.merriam-webster.com/games/quordle/#/",
+        text: "quordle" },
+      { href: "https://www.nytimes.com/games/digits",
+        text: "digits" },
+    ]},
 ];
 
 // template
