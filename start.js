@@ -49,11 +49,10 @@ const menu = [
   { title: "Social",
     mobileTitle: "👫",
     links: [
-      { href: "http://www.reddit.com/",
-        text: "reddit" },
-      separator,
       { href: "https://elk.zone/",
         text: "elk.zone" },
+      { href: "https://fedia.io/",
+        text: "fedia" },
     ]},
   { title: "Games",
     mobileTitle: "🎲",
