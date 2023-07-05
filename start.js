@@ -51,8 +51,12 @@ const menu = [
     links: [
       { href: "https://elk.zone/",
         text: "elk.zone" },
+      { href: "https://evil.social/",
+        text: "evil.social" },
       { href: "https://fedia.io/",
         text: "fedia" },
+      { href: "https://geddit.social/",
+        text: "geddit" },
     ]},
   { title: "Games",
     mobileTitle: "🎲",
