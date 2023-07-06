@@ -1,65 +1,22 @@
+/* aad, 225, 114, 000 */
+
 body {
   font-family: "Lucida Grande", sans-serif;
   font-size: 18px;
-  margin:0;
+  margin:0.25em;
   padding:0;
 }
 
-h1 {
-  font-size: 18px;
-  line-height: 20px;
-  cursor: pointer;
-  padding: 0 0 0 7px;
+.navs {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-h1 .mobile {
-  display: none;
-}
-
-.menu a {
-  cursor: pointer;
-  text-decoration: none;
-  color: #aad;
-  display: block;
-}
-
-.menu a[href]:after {
-  content: " ⇗";
-}
-
-.nav {
-  background-color: #225;
-  color: #aad;
-  height: 42px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-shadow: 0 0 1em #114;
-  opacity: 0.95;
-}
-
-.nav > li {
-  display: inline-block;
-  margin: 0 0 10px 10px;
-  vertical-align: top;
-}
-
-.menu {
-  background-color: #225;
-  border-radius: 0 0 3px 3px;
-  display: none;
-  margin-top: -2px;
-  padding: 4px;
-  position: absolute;
-  min-width: 150px;
-}
-
-.menu > li {
-  padding: 3px;
-}
-
-.menu > li:hover {
-  background-color: #000;
+nav {
+  margin: 0.5em;
+  padding: 0 0.5em 0.5em 1em;
+  flex-grow: 1;
+  background-color: #eef;
 }
 
 ul {
@@ -68,58 +25,13 @@ ul {
   list-style: none;
 }
 
-#link-container {
-  padding: 5px 10px;
-}
-
-a#rss-link {
+h1 {
+  font-size: 18px;
+  line-height: 20px;
   color: #225;
+}
+
+a {
   text-decoration: none;
-  font-weight: bold;
-}
-
-.feed-container {
-  font-size: 15px;
-  width: 700px;
-}
-
-.rss-entry {
-  padding: 10px;
-}
-
-#content {
-  margin: 50px 10px;
-}
-
-hr {
-  background-color: #aad;
-  border: 0;
-  height: 1px;
-}
-
-/* NotoEmojiRegular is distributed by virtue of the SIL Open Font
-   License, see /vendor/SIL-LICENSE for details */
-@font-face {
-  font-family: 'NotoEmojiRegular';
-  src: url('vendor/NotoEmoji-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@media (max-width: 650px) {
-  .mobile {
-    font-family: 'NotoEmojiRegular', sans-serif;
-  }
-
-  h1 .full-size {
-    display: none;
-  }
-
-  h1 .mobile {
-    display: block;
-  }
-
-  .feed-container {
-    width: 97%;
-  }
+  color: #448;
 }

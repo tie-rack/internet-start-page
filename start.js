@@ -6,11 +6,8 @@ const zeroPad = n => {
   }
 }
 
-const separator = new Object();
-
 const menu = [
   { title: "News",
-    mobileTitle: "📰",
     links: [
       { href: "http://forecast.weather.gov/MapClick.php?CityName=New+York&state=NY&site=OKX&textField1=40.7198&textField2=-73.993&e=1",
         text: "weather" },
@@ -24,13 +21,11 @@ const menu = [
         text: "vsb" },
     ]},
   { title: "Programming",
-    mobileTitle: "ƛ",
     links: [
       { href: "http://sachachua.com/blog/category/emacs/",
         text: "sacha chua emacs" },
     ]},
   { title: "Comics",
-    mobileTitle: "💭",
     links: [
       { href: "http://xkcd.com",
         text: "xkcd" },
@@ -47,7 +42,6 @@ const menu = [
       },
     ]},
   { title: "Social",
-    mobileTitle: "👫",
     links: [
       { href: "https://elk.zone/",
         text: "elk.zone" },
@@ -59,7 +53,6 @@ const menu = [
         text: "geddit" },
     ]},
   { title: "Games",
-    mobileTitle: "🎲",
     links: [
       { href: "https://www.nytimes.com/games/wordle/index.html",
         text: "wordle" },
@@ -72,58 +65,30 @@ const menu = [
 
 // template
 $(menu).each((_,e) => {
-  const id = e.title + "-menu";
-  const menuItem = $("<li></li>");
-  menuItem.addClass("menu-category");
-  menuItem.attr("data-menu", id);
+  const nav = $("<nav></nav>");
 
-  const menuHeader = $("<h1></h1>");
+  const title = $("<h1></h1>");
+  title.text(e.title);
 
-  const fullSizeHeader = $("<span></span>");
-  fullSizeHeader.addClass("full-size");
-  fullSizeHeader.text(e.title);
-  menuHeader.append(fullSizeHeader);
+  nav.append(title);
 
-  const mobileHeader = $("<span></span>");
-  mobileHeader.addClass("mobile");
-  mobileHeader.text(e.mobileTitle);
-  menuHeader.append(mobileHeader);
+  const links = $("<ul></ul>");
+  $(e.links).each((_, link) => {
+    const li = $("<li></li>");
+    const a = $("<a></a>");
 
-  menuItem.append(menuHeader);
-
-  const subMenu = $("<ul></ul>");
-  subMenu.attr("id", id);
-  subMenu.addClass("menu");
-
-  $(e.links).each((_,link) => {
-    if (link === separator) {
-      subMenu.append($("<hr>"));
+    if (link.hrefFunction) {
+      a.attr("href", link.hrefFunction());
     } else {
-      const li = $("<li></li>");
-      const a = $("<a></a>");
-
-      if (link.hrefFunction) {
-        a.attr("href", link.hrefFunction());
-      } else {
-        a.attr("href", link.href);
-      }
-      a.text(link.text);
-
-      li.append(a);
-      subMenu.append(li);
+      a.attr("href", link.href);
     }
-  });
-  menuItem.append(subMenu);
+    a.text(link.text);
 
-  $(".nav").append(menuItem);
+    li.append(a);
+    links.append(li);
+  })
+
+  nav.append(links);
+
+  $(".navs").append(nav);
 });
-
-$(".menu-category").each((_,e) => {
-  const subMenuId = "#" + $(e).attr("data-menu");
-  $(e).hover((_) => $(subMenuId).toggle());
-});
-
-window.addEventListener('error', (e) => {
-  console.log(e);
-  $("#rss-content").text("Something's going wrong, sorry!");
-}, true);
