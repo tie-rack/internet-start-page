@@ -22,6 +22,12 @@ const menu = [
     links: [
       { href: "http://sachachua.com/blog/category/emacs/",
         text: "sacha chua emacs" },
+      { href: "https://pkg.go.dev/std",
+        text: "go std" },
+      { href: "https://doc.rust-lang.org/std/index.html",
+        text: "rust std" },
+      { href: "https://docs.python.org/3/library/index.html",
+        text: "python std" },
     ]},
   { title: "Comics",
     links: [
