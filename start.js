@@ -17,8 +17,6 @@ const menu = [
         text: "wapo" },
       { href: "http://nytimes.com",
         text: "nyt" },
-      { href: "http://verysmartbrothas.theroot.com/",
-        text: "vsb" },
     ]},
   { title: "Programming",
     links: [
@@ -58,8 +56,6 @@ const menu = [
         text: "wordle" },
       { href: "https://www.merriam-webster.com/games/quordle/#/",
         text: "quordle" },
-      { href: "https://www.nytimes.com/games/digits",
-        text: "digits" },
     ]},
 ];
 
