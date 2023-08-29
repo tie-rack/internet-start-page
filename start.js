@@ -51,10 +51,10 @@ const menu = [
         text: "elk.zone" },
       { href: "https://evil.social/",
         text: "evil.social" },
-      { href: "https://fedia.io/",
-        text: "fedia" },
       { href: "https://geddit.social/",
         text: "geddit" },
+      { href: "https://pixelfed.social/",
+        text: "pixelfed" },
     ]},
   { title: "Games",
     links: [
