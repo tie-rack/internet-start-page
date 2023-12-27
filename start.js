@@ -6,6 +6,8 @@ const zeroPad = n => {
   }
 }
 
+const separator = new Object();
+
 const menu = [
   { title: "News",
     links: [
@@ -62,6 +64,9 @@ const menu = [
         text: "wordle" },
       { href: "https://www.merriam-webster.com/games/quordle/#/",
         text: "quordle" },
+      separator,
+      { href: "https://lichess.org/",
+        text: "lichess" },
     ]},
 ];
 
@@ -76,18 +81,22 @@ $(menu).each((_,e) => {
 
   const links = $("<ul></ul>");
   $(e.links).each((_, link) => {
-    const li = $("<li></li>");
-    const a = $("<a></a>");
-
-    if (link.hrefFunction) {
-      a.attr("href", link.hrefFunction());
+    if (link === separator) {
+      links.append($('<hr class="separator">'));
     } else {
-      a.attr("href", link.href);
-    }
-    a.text(link.text);
+      const li = $("<li></li>");
+      const a = $("<a></a>");
 
-    li.append(a);
-    links.append(li);
+      if (link.hrefFunction) {
+        a.attr("href", link.hrefFunction());
+      } else {
+        a.attr("href", link.href);
+      }
+      a.text(link.text);
+
+      li.append(a);
+      links.append(li);
+    }
   })
 
   nav.append(links);
