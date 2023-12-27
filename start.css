@@ -1,5 +1,12 @@
 /* aad, 225, 114, 000 */
 
+:root {
+  --bg: hsl(240, 100%, 97%);
+  --dark: hsl(240, 33%, 30%);
+  --med: hsl(240, 33%, 40%);
+}
+
+
 body {
   font-family: "Lucida Grande", sans-serif;
   font-size: 18px;
@@ -16,7 +23,7 @@ nav {
   margin: 0.5em;
   padding: 0 0.5em 0.5em 1em;
   flex-grow: 1;
-  background-color: #eef;
+  background-color: var(--bg);
 }
 
 ul {
@@ -28,10 +35,19 @@ ul {
 h1 {
   font-size: 18px;
   line-height: 20px;
-  color: #225;
+  color: var(--dark);
 }
 
 a {
   text-decoration: none;
-  color: #448;
+  color: var(--med);
+}
+
+.separator {
+  color: var(--med);
+  border: none;
+  border-top: 3px double var(--med);
+  overflow: visible;
+  text-align: center;
+  height: 0;
 }
