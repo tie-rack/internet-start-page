@@ -15,8 +15,6 @@ const menu = [
         text: "slate" },
       { href: "https://www.washingtonpost.com/",
         text: "wapo" },
-      { href: "http://nytimes.com",
-        text: "nyt" },
     ]},
   { title: "Programming",
     links: [
