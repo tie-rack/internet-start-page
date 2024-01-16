@@ -49,8 +49,6 @@ const menu = [
     links: [
       { href: "https://elk.zone/",
         text: "elk.zone" },
-      { href: "https://evil.social/",
-        text: "evil.social" },
       { href: "https://lemmy.today/",
         text: "lemmy.today" },
       { href: "https://pixelfed.social/",
