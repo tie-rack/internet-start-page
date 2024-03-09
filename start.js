@@ -58,8 +58,6 @@ const menu = [
     links: [
       { href: "https://www.puzzmo.com/",
         text: "puzzmo" },
-      { href: "https://www.nytimes.com/games/wordle/index.html",
-        text: "wordle" },
       { href: "https://www.merriam-webster.com/games/quordle/#/",
         text: "quordle" },
       separator,
