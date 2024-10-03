@@ -14,7 +14,8 @@ const menu = [
       { href: "http://forecast.weather.gov/MapClick.php?CityName=New+York&state=NY&site=OKX&textField1=40.7198&textField2=-73.993&e=1",
         text: "weather" },
       { href: "http://www.slate.com/",
-        text: "slate" },
+        text: "slate",
+        gate: true },
       { href: "https://www.washingtonpost.com/",
         text: "wapo" },
     ]},
@@ -89,6 +90,12 @@ $(menu).each((_,e) => {
         a.attr("href", link.href);
       }
       a.text(link.text);
+
+      if (link.gate) {
+        a.on("click", e => {
+          e.currentTarget.classList.add("disabled");
+        })
+      }
 
       li.append(a);
       links.append(li);
