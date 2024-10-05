@@ -58,6 +58,6 @@ a.disabled {
   pointer-events: none;
 }
 
-li:has(+ a.disabled) {
+li:has(a.disabled) {
   cursor: not-allowed;
 }
