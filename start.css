@@ -56,5 +56,8 @@ a {
 a.disabled {
   color: var(--light);
   pointer-events: none;
+}
+
+li:has(+ a.disabled) {
   cursor: not-allowed;
 }
