@@ -56,4 +56,5 @@ a {
 a.disabled {
   color: var(--light);
   pointer-events: none;
+  cursor: not-allowed;
 }
