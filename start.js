@@ -16,6 +16,7 @@ const menu = [
       { href: "http://www.slate.com/",
         text: "slate",
         gate: true },
+      separator,
       { href: "https://hellgatenyc.com/",
         text: "hell gate" },
       { href: "https://www.thecity.nyc/",
