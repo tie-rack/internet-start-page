@@ -16,8 +16,10 @@ const menu = [
       { href: "http://www.slate.com/",
         text: "slate",
         gate: true },
-      { href: "https://www.washingtonpost.com/",
-        text: "wapo" },
+      { href: "https://hellgatenyc.com/",
+        text: "hell gate" },
+      { href: "https://www.thecity.nyc/",
+        text: "the city" },
     ]},
   { title: "Programming",
     links: [
