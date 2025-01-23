@@ -55,8 +55,6 @@ const menu = [
         text: "elk.zone" },
       { href: "https://lemmy.today/",
         text: "lemmy.today" },
-      { href: "https://pixelfed.social/",
-        text: "pixelfed" },
     ]},
   { title: "Games",
     links: [
