@@ -4,7 +4,8 @@
   --bg: hsl(240, 100%, 97%);
   --dark: hsl(240, 33%, 30%);
   --med: hsl(240, 33%, 40%);
-  --light: hsl(240, 33%, 80%)
+  --light: hsl(240, 33%, 80%);
+  --vlight: hsl(240, 100%, 98.5%);
 }
 
 
@@ -33,6 +34,14 @@ ul {
   list-style: none;
 }
 
+li {
+  line-height: 1.5em;
+  padding-left: 0.4em;
+  margin-left: -0.4em;
+  margin-bottom: 0.3em;
+  background-color: var(--vlight);
+}
+
 h1 {
   font-size: 18px;
   line-height: 20px;
@@ -42,22 +51,4 @@ h1 {
 a {
   text-decoration: none;
   color: var(--med);
-}
-
-.separator {
-  color: var(--med);
-  border: none;
-  border-top: 3px double var(--med);
-  overflow: visible;
-  text-align: center;
-  height: 0;
-}
-
-a.disabled {
-  color: var(--light);
-  pointer-events: none;
-}
-
-li:has(a.disabled) {
-  cursor: not-allowed;
 }
